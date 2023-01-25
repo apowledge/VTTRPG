@@ -16,4 +16,4 @@ async def on_message(message):
     if message.content.startswith('hi'):
         await message.channel.send('Hello!')
 
-client.run('MTA2NzkwMjY0ODM0ODU3MzgxNg.GKfd5e.m9a4N6xIcqFrnhmXeIj4sIpf3gsGQ4gfQILGmU')
+client.run(BOT_TOKEN) # DONT upload token to github. If you screw up Discord will automatically catch and reset it
