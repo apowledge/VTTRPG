@@ -1,4 +1,4 @@
-from VTTRPG import app
+from pathfinder import app
 
 
 if __name__ == '__main__':

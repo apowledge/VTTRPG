@@ -2,18 +2,18 @@
 
 """
 
-import os
-import pandas as pd
+#import pandas as pd
 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from flask_bcyrpt import Bcrypt
+from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 from flask_gravatar import Gravatar
 
-#from VTTRPG.config import Config
+from pathfinder.config import Config
 
 app = Flask(__name__)
+app.config.from_object(Config)
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
