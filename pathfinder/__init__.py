@@ -1,8 +1,6 @@
 """
-
+Runs on 'from pathfinder import app'
 """
-
-#import pandas as pd
 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
