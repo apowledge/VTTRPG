@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thunderbird UI Two-Column Left Sidebar Template</title>
+  <link rel="stylesheet" href="https://cdn.sandia.gov/tui/v3/css/tui.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.sandia.gov/tui/v3/js/jquery.js"></script>
+  <script src="https://cdn.sandia.gov/tui/v3/js/tui.js"></script>
+  <script type="text/javascript" id="includeGlobalHeader"
+          src="https://ui.sandia.gov/snl-global-header/js/snl-global-header.js" data-links="true" data-search="true"
+          data-footer="true" data-cchd="true"></script>
+  <!-- Thunderbird UI v3.3.0 Template-->
+</head>
+
+<body>
+<!-- SITE HEADER START -->
+<!-- Navigation orientation: Add 'inline' for right aligned inline navigation or 'vertical' for a left vertical navigation format -->
+<!-- Vertical navigation: For implementing the vertical naviation, see the instructions at https://ui.sandia.gov/site-header for how to implement with wrappers -->
+<!-- Navigation styling: Add the 'inverted' or 'photo' class to change the navigation styling -->
+<div class="site-header navbar navbar-expand-lg d-block">
+  <div class="navbar-header">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a href="#" class="navbar-brand">Sandia XYZ Application</a>
+    <div class="user-welcome ml-auto">
+      <img src="../../assets/images/user-photo.jpg" alt="user photo">
+      Welcome, User
+    </div>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active"><a class="nav-link" href="#">Page 1 <span class="sr-only">(current)</span></a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Page 2</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Page 3</a></li>
+      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1"
+                                       role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Page 4</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="#">Page 5</a></li>
+    </ul>
+  </div>
+</div>
+<!-- SITE HEADER END -->
+
+<!-- SITE CONTENT START -->
+<!-- Change the 'main-content' class from 'container' to 'container-fluid' for the content to span the width of the browser.  -->
+<!-- For more information about customizing see https://ui.sandia.gov/templates-->
+<div id="main-content" class="container">
+  <h1>Page Title</h1>
+  <div class="row">
+    <div class="col-md-4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel cursus metus, et dictum nunc.
+        Pellentesque
+        sit amet nulla eu lacus vehicula tempor. In ipsum ex, lobortis et fermentum sed, consectetur eu tortor.
+        Duis lobortis feugiat faucibus. Vivamus urna lorem, ultricies vel ante et, scelerisque semper ipsum.
+        Morbi fringilla quam et volutpat molestie. Nullam sed nulla scelerisque, vestibulum quam eget, varius
+        libero. Integer non dictum nulla, a volutpat ante. Praesent blandit nunc ut nisi rhoncus ultricies eget
+        vitae est. Sed vehicula consectetur arcu, vel aliquet augue venenatis eget.
+      </p>
+    </div>
+    <div class="col-md-8">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel cursus metus, et dictum nunc.
+        Pellentesque
+        sit amet nulla eu lacus vehicula tempor. In ipsum ex, lobortis et fermentum sed, consectetur eu tortor.
+        Duis lobortis feugiat faucibus. Vivamus urna lorem, ultricies vel ante et, scelerisque semper ipsum.
+        Morbi fringilla quam et volutpat molestie. Nullam sed nulla scelerisque, vestibulum quam eget, varius
+        libero. Integer non dictum nulla, a volutpat ante. Praesent blandit nunc ut nisi rhoncus ultricies eget
+        vitae est. Sed vehicula consectetur arcu, vel aliquet augue venenatis eget.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- SITE CONTENT END -->
+
+<!-- SITE FOOTER START -->
+<!-- Optional. Add the class 'mega-menu' for a more complex site footer layout. See instructions at https://ui.sandia.gov/site-footer -->
+<footer class="site-footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-auto">
+        <p><strong>Content Owner</strong><br>
+          Yoda | 123-4444</p>
+      </div>
+      <div class="col-auto">
+        <p><strong>Website Contact</strong><br>
+          Obi-Wan Kanobi | 456-7777</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- SITE FOOTER END -->
+</body>
+
+</html>
