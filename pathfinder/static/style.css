@@ -8,7 +8,7 @@ body {
   flex-direction: column !important;
 }
 
-#snl-global-footer {
+#site-footer {
   position: relative !important;
   overflow: visible !important;
   height: auto !important;
