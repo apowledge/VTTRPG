@@ -11,9 +11,6 @@ from flask_login import LoginManager
 from flask_gravatar import Gravatar
 
 from pathfinder.config import Config
-#import os
-#basedir = os.path.abspath(os.path.dirname(__file__))
-#SQLALCHEMY_DATABASE_URI = "sqlite:///"+os.path.join(basedir, "appdata.db")
 
 app = Flask(__name__)
 app.config.from_object(Config)
