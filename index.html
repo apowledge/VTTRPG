@@ -69,6 +69,17 @@
         <p>
             Content goes here
         </p>
+    
+        {% if secrets.TEST_SECRET %}
+        <p>
+            True
+        </p>    
+        {% else %}
+        <p>
+            False
+        </p>
+        {% endif %}
+    
         {% block content %}{% endblock content %}
       </div>
       

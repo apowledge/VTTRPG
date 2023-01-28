@@ -7,4 +7,4 @@ def home():
     #return render_template("two-col-left-sidebar.html")
     #return render_template("base_bootstrap.html")
     #print("Display Home Page")
-    return render_template("temp.html")
+    return render_template("index.html")
