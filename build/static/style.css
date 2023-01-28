@@ -1,0 +1,27 @@
+/* keep the following to position footer to bottom */
+body {
+  position: relative !important;
+  min-height: 100% !important;
+  height: 100% !important;
+  padding-bottom: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+#site-footer {
+  position: relative !important;
+  overflow: visible !important;
+  height: auto !important;
+}
+
+#main-content {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 0 auto !important;
+}
+
+.site-footer {
+  margin-top: auto;
+}
+
+/* add custom styling below */
