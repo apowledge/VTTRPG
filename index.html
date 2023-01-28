@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+  <title>VTTRPG Helper</title>
+</head>
+
+<body>
+  <!-- Site Header  -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+      <div class="container-fluid">
+        <!-- Main Functionality Routing Controls -->
+        <div class="navbar-nav">
+          <table>
+            <tr>
+              <td>
+                <a class="nav-item nav-link" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+              </td>
+              <td>
+                <a class="nav-item nav-link" href="#"><i class="fa fa-info-circle"></i> About</a>
+              </td>
+              <td>
+                <a class="nav-item nav-link" href="#"><i class="fas fa-list-ul"></i> Index</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- Title Bar -->
+        <div class="col-md-auto">
+          <a class="navbar-brand mr-4" href="/">Main Page Title</a>
+        </div>
+        <!-- User Specific Routing Controls -->
+        <div class="navbar-nav">
+          <table>
+            <tr>
+              <td>
+                <a class="nav-item nav-link" href="#"><i class="fas fa-star"></i> Favorites</a>
+              </td>
+              <td>
+                <div class="media">
+                  <img class="rounded-circle account-img" src="{{ 'randomthingie@someplace.com' | gravatar }}">
+                </div>          
+              </td>
+              <td>
+                <a class="nav-item nav-link" href="#">Account</a>
+              </td>
+              <td>
+                <a class="nav-item nav-link" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT (Below Navbar) -->
+  <main role="main" class="container-fluid">
+    <div class="row">
+      <div class="col-md-auto">
+        <h3>Main Content Title</h3>
+        <p>
+            Content goes here
+        </p>
+        {% block content %}{% endblock content %}
+      </div>
+      
+      <!-- Sticky Sidebar on right side -->
+      <div class="col-md-auto ml-auto">
+        <div class="content-section">
+          <h3>Sidebar Title</h3>
+          <p>
+            Sidebar content
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- now extra scripts here -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
